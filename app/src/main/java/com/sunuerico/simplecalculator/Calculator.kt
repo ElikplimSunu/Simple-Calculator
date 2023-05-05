@@ -25,8 +25,8 @@ import com.sunuerico.simplecalculator.ui.theme.Orange
 @Composable
 fun Calculator(
     state: CalculatorState,
-    buttonSpacing: Dp = 8.dp,
     modifier: Modifier = Modifier,
+    buttonSpacing: Dp = 8.dp,
     onAction: (CalculatorAction) -> Unit
 ) {
     Box(modifier = modifier) {
@@ -74,7 +74,7 @@ fun Calculator(
                 CalculatorButton(
                     symbol = "÷",
                     modifier = Modifier
-                        .background(LightGray)
+                        .background(Orange)
                         .aspectRatio(1f)
                         .weight(1f),
                     onClick = {
